@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let member = nameTextField.text!
         
         // MARK: -   1️⃣ تحت الخط membersNamesArray إلي المصفوفه memberقم بإضافة المتغير
-        
+        membersNamesArray.append( member )
         
         
         // MARK: -   النهاية
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         // MARK: -  4️⃣ functionCall داخل المتغير  secretNameLetter قم باستدعاء الدالة
         
-        var functionCall = ""
+        var functionCall = secretNameLetter(membernamearray:[String])->String
         
         
         // MARK: -   النهاية
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         // MARK: -  5️⃣ functionCall داخل المتغير  secretNameEmoji قم باستدعاء الدالة
         
-        var functionCall = ""
+        var functionCall=secretNametoEmoji(membernamearray: [String])->String
         
         // MARK: -   النهاية
         
@@ -65,7 +65,9 @@ class ViewController: UIViewController {
     
     
     // MARK: - 2️⃣ تحت هذا الخط secretNameLetter قم بكتابة الداله
-    
+    func secretNameLetter(membernamearray:[String])->String
+    { for memberNameArray in secretNameLetter ([String])->String
+        memberNameArray.prefix(1) }
     
     // MARK: -   النهاية
     
@@ -74,8 +76,12 @@ class ViewController: UIViewController {
     
     
     // MARK: - 3️⃣ تحت هذا الخط secretNameEmoji قم بكتابة الداله
-    
-    
+    func secretNametoEmoji(membernamearray:[String])->String
+    {  for memberNameArray in secretNametoEmoji([String]) ->String
+        if "s" {print ("👾")}
+        else if "a" {print ("👻")}
+        else {print ("🤖")}
+    }
     // MARK: -   النهاية
     
     
